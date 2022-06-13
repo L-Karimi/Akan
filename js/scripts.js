@@ -7,7 +7,6 @@ function akan() {
     var month = parseInt(document.getElementById("month").value);
     var Date = parseInt(document.getElementById("date").value);
     var gender = document.getElementById("gender").value;
-    var CC = parseInt(year.substr(0, 2));
     var YY = parseInt(year.substr(2, 4)); 
     var MM = month;
     var DD = Date;
@@ -19,17 +18,17 @@ function akan() {
         alert("Akan name is " + maleAkanName[day])
         
     }
-    if (DD=>0||DD<32) {
+    if (DD=>0||DD<=31) {
         // alert("Valid date")
     } else {
         alert("Enter a valid date")
     }
-    if (MM=>o||MM<12) {
+    if (MM=>o||MM<=12) {
         // alert("valid month")
     } else {
          alert("Enter a valid month")
             }
-            if (YY=>1800||YY<2020) {
+            if (YY=>1800||YY<=2020) {
                 // alert("valid year")
             } else {
                 alert("Enter a valid year")
